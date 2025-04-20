@@ -1,0 +1,46 @@
+body {
+  background-image: url('/rainbow_background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.spicy-rice-regular {
+  font-family: "Spicy Rice", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #362A07;
+}
+
+h1 {
+  font-size: 100px;
+}
+
+.karla-font {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.form-label {
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #DB760A;
+}
+
+.btn {
+  background-color: #DB760A;
+  color: #F5F3E0;
+  border: none;
+  margin-right: 30px;
+}
+
+.btn:hover {
+  background-color: #7FB285;
+}
+
+.btn.btn-primary:active {
+  background-color: #65A4A1;
+}
