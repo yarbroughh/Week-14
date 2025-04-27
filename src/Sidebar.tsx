@@ -1,16 +1,22 @@
 // Static form layout for adding new puzzles — 
-// functionality will be added later.
+// functionality to connect input fields to data file will
+// be added in Week 16.
 
-//Prop for a title 
-type Props = {
-  title: string;
+import { Card } from "react-bootstrap";
+import { TitleProps } from "./types";
+//No longer need - getting props from App
+//import { puzzles } from "./data";
+
+//Prop for a title and to add functionality for the Add button
+type Props = TitleProps & {
+  onAdd: () => void;
 };
 
 
-function Sidebar({ title }: Props) {
+function Sidebar({ title, onAdd }: Props) {
     return (
-      <div className="card p-4">
-        <h2 className="card-title spicy-rice-regular">{ title }</h2>  
+      <Card className="p-4">
+        <Card.Title className="spicy-rice-regular">{title}</Card.Title>   
       <form className="sidebar-form">
           <div className="mb-3">
             <label htmlFor="name" className="form-label">Puzzle Name</label>
@@ -68,11 +74,11 @@ function Sidebar({ title }: Props) {
               placeholder="Any notes?"
             />
             </div>
-          <div className="mb-3">
-              <button type="submit" className="btn btn-primary w-100">Add</button>
+          <div className="mb-3"> 
+              <button type="button" className="btn btn-primary w-100" onClick={onAdd}>Add</button>
           </div>
       </form>
-      </div>
+      </Card>
     )
 }
 

@@ -23,6 +23,11 @@ h1 {
   font-style: normal;
 }
 
+h2 {
+  font-family: "Karla", sans-serif;
+  color: #DB760A;
+}
+
 .form-label {
   font-family: "Karla", sans-serif;
   font-weight: 700;
